@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Hazme paro</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_propuestas">PropuestasActivity</string>
+
+    <string-array name="array_categorias">
+        <item>Electricista</item>
+        <item>Plomero</item>
+        <item>Limpieza</item>
+        <item>Vidriero</item>
+        <item>Mecánico/Talachero</item>
+        <item>Carpintero</item>
+        <item>Veterinario</item>
+        <item>Estilista</item>
+        <item>Fotógrafo</item>
+        <item>Pintor</item>
+        <item>Técnico reparador</item>
+        <item>Flete</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".Inicio.Views.InicioFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollViewServicio"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layoutSolicitarServicio"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/captain"
+                    android:gravity="center_horizontal"
+                    android:text="Solicitar Servicio"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text="Categoría"
+                        android:textColor="#000"
+                        android:textSize="18sp" />
+
+                    <Spinner
+                        android:id="@+id/spinnerCategoriaServicio"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:dropDownWidth="match_parent"
+                        android:spinnerMode="dialog"
+                        android:entries="@array/array_categorias"/>
+                </LinearLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtInputTitutoServicio"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:hint="Descripción corta"
+                    app:errorIconDrawable="@null">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtInputDescripcionServicio"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:hint="Descripción completa"
+                    app:errorIconDrawable="@null"
+                    app:helperText="Recuerda incluir a detalle lo que necesitas"
+                    app:helperTextEnabled="true"
+                    app:helperTextTextColor="#0288D1">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:lines="5"
+                        android:maxLines="10"
+                        android:minLines="2" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtInputHoraServicio"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:clickable="false"
+                    android:enabled="true"
+                    android:hint="Hora deseada para el servicio"
+                    app:errorIconDrawable="@null">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtInputHoraServicio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="false"
+                        android:inputType="text" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtInputDireccionServicio"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:hint="Dirección para el servicio"
+                    app:errorIconDrawable="@null"
+                    app:helperText="Ingresa la dirección donde deseas que se realice el servicio"
+                    app:helperTextEnabled="true"
+                    app:helperTextTextColor="#0288D1">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:lines="5"
+                        android:maxLines="10"
+                        android:minLines="2" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/captain"
+                    android:gravity="center_horizontal"
+                    android:text="Ubicacion para el servicio"
+                    android:textSize="18sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Click en el mapa para modificar ubicación"
+                    android:textSize="11sp"
+                    android:textStyle="italic" />
+
+                <RelativeLayout
+                    android:id="@+id/map_layoutServicio"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:padding="15dp">
+
+                    <fragment
+                        android:id="@+id/mapSolicitarServicio"
+                        android:name="com.google.android.gms.maps.SupportMapFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp" />
+
+                    <ImageView
+                        android:id="@+id/transparent_imageServicio"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent" />
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/captain"
+                    android:gravity="center_horizontal"
+                    android:text="Imagen del problema"
+                    android:textSize="18sp"
+                    android:textStyle="italic" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_marginBottom="15dp"
+                    android:text="Si solicitas alguna compostura ingresa la imagen del problema"
+                    android:textSize="11sp"
+                    android:textStyle="italic" />
+
+                <ImageView
+                    android:id="@+id/imgServicio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxWidth="200dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnImgServicio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/captain"
+                    android:text="Seleccionar imagen"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    app:strokeColor="#1E88E5" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnSolicitarServicio"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/captain"
+                    android:text="Solicitar"
+                    android:textColor="#1E88E5"
+                    android:textSize="20sp"
+                    app:strokeColor="#1E88E5" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</FrameLayout>

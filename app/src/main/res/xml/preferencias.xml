@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory android:title="NOTIFICACIONES"
+        app:allowDividerAbove="true">
+    <SwitchPreferenceCompat
+        app:key="notificaciones"
+        android:title="Recibir notificaciones">
+    </SwitchPreferenceCompat>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="INFORMACION">
+        <PreferenceScreen
+            android:title="Versión de la aplicación"
+            android:summary="1.0 Beta">
+
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Inicio" />
+
+    <item
+        android:id="@+id/navigation_favores"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="Favores" />
+
+    <item
+        android:id="@+id/navigation_cuenta"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="Cuenta" />
+
+</menu>

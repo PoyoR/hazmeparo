@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "89513050031",
+    "firebase_url": "https://hazmeparo-a15cd.firebaseio.com",
+    "project_id": "hazmeparo-a15cd",
+    "storage_bucket": "hazmeparo-a15cd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:89513050031:android:64a571308a56ec4f32b95a",
+        "android_client_info": {
+          "package_name": "com.hazmeparo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "89513050031-e1bufobri9e0hkgg5it8f9f1d6ov2o8q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6ROlFNbSFI0H455s-PE85G-LpwctdiQk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "89513050031-e1bufobri9e0hkgg5it8f9f1d6ov2o8q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
